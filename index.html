@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fora da Moda – Restaurante Bar em Anchilo. Comidas locais, grelhados, fast food, bebidas e reservas por WhatsApp." />
+  <meta name="theme-color" content="#071326" />
+  <title>Fora da Moda – Restaurante Bar | Anchilo</title>
+  <link rel="icon" href="assets/images/favicon.png" />
+  <link rel="preload" as="image" href="assets/images/area_externa.jpg" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="topo">
+    <a class="brand" href="#topo" aria-label="Fora da Moda">
+      <img src="assets/images/logo.jpg" alt="Logotipo Fora da Moda Restaurante Bar" />
+      <span><strong>Fora da Moda</strong><small>Restaurante Bar · Anchilo</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#menu">Menu</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Apresentação do restaurante">
+      <div class="hero-bg">
+        <img src="assets/images/area_externa.jpg" alt="Área externa do Fora da Moda em Anchilo" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Restaurante Bar em Anchilo</p>
+          <h1>Está em viagem para Anchilo? Reserve a sua comida antes de chegar.</h1>
+          <p>No Fora da Moda, preparamos comidas locais, grelhados, fast food e pratos saborosos para você chegar e comer sem demora.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#reservas">Reservar pelo WhatsApp</a>
+            <a class="btn btn-light" href="#menu">Ver Menu</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps?q=-15.0990278,39.4270278" target="_blank" rel="noopener">Como Chegar</a>
+          </div>
+        </div>
+        <aside class="hero-card reveal" aria-label="Resumo rápido">
+          <img src="assets/images/logo.jpg" alt="Logo Fora da Moda" />
+          <h2>Chegue, sente e saboreie.</h2>
+          <p>A sua comida pode estar pronta à sua espera no Fora da Moda.</p>
+          <a href="tel:+258864992397">+258 86 499 2397</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="quick-strip" aria-label="Destaques">
+      <div class="container strip-grid">
+        <div><strong>Comida local</strong><span>Matapa, xima, peixe, arroz e pratos do dia.</span></div>
+        <div><strong>Grelhados</strong><span>Frango, codorniz, peixe e acompanhamentos.</span></div>
+        <div><strong>Fast food</strong><span>Hambúrgueres, pizza, batata e opções rápidas.</span></div>
+        <div><strong>Reservas</strong><span>Pedido e mesa pelo WhatsApp antes de chegar.</span></div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section about">
+      <div class="container two-col">
+        <div class="image-stack reveal">
+          <img class="img-main" src="assets/images/sala_grupo.jpg" alt="Equipa e clientes no interior do Fora da Moda" />
+          <img class="img-float" src="assets/images/cozinha_equipa.jpg" alt="Equipa na cozinha preparando comida" />
+        </div>
+        <div class="section-copy reveal">
+          <p class="eyebrow">Sobre o restaurante</p>
+          <h2>Sabores locais preparados com carinho em Anchilo.</h2>
+          <p>O Fora da Moda – Restaurante Bar é um espaço acolhedor para quem procura comida boa, atendimento simpático, bebidas e refeições preparadas com cuidado.</p>
+          <p>É ideal para viajantes, famílias, grupos, almoços rápidos, jantares e reservas de mesa. O cliente pode escolher a comida antes de chegar, informar o horário e receber uma resposta direta pelo WhatsApp.</p>
+          <div class="feature-list">
+            <span>✓ Ambiente familiar</span>
+            <span>✓ Comida local e grelhados</span>
+            <span>✓ Bebidas e bar</span>
+            <span>✓ Área externa</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="traveler-cta section-dark">
+      <div class="container cta-grid">
+        <div class="reveal">
+          <p class="eyebrow">Para quem está na estrada</p>
+          <h2>Vai passar por Anchilo?</h2>
+          <p>Faça a sua reserva antes de chegar. Escolha a comida, informe o horário e nós preparamos tudo para você comer com tranquilidade ao chegar no Fora da Moda.</p>
+        </div>
+        <a class="btn btn-primary" href="#reservas">Reservar Agora pelo WhatsApp</a>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Menu digital provisório</p>
+          <h2>Escolha o prato e monte o seu pedido.</h2>
+          <p>Os preços abaixo são provisórios e podem ser alterados quando o menu oficial for enviado.</p>
+        </div>
+        <div class="menu-layout">
+          <div class="menu-tabs reveal" role="tablist" aria-label="Categorias do menu"></div>
+          <div class="menu-items reveal" id="menuItems"></div>
+          <aside class="order-box reveal" aria-label="Pedido selecionado">
+            <h3>Pedido para reserva</h3>
+            <ul id="orderList"><li class="empty">Nenhum item selecionado.</li></ul>
+            <div class="order-total"><span>Total estimado</span><strong id="orderTotal">0 Mts</strong></div>
+            <a class="btn btn-primary full" href="#reservas" id="copyOrder">Usar no formulário</a>
+            <small>Valores provisórios. Confirme disponibilidade pelo WhatsApp.</small>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservas" class="section reservations">
+      <div class="container two-col align-start">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Reservas</p>
+          <h2>Reserve mesa, comida e horário de chegada.</h2>
+          <p>Preencha os dados abaixo. O botão vai abrir o WhatsApp com a mensagem pronta para enviar ao Fora da Moda.</p>
+          <div class="contact-card">
+            <strong>Contacto direto</strong>
+            <a href="https://wa.me/258864992397" target="_blank" rel="noopener">WhatsApp: +258 86 499 2397</a>
+            <a href="tel:+258864992397">Ligar: +258 86 499 2397</a>
+          </div>
+        </div>
+        <form class="reservation-form reveal" id="reservationForm">
+          <label>Nome
+            <input type="text" name="nome" placeholder="Seu nome" required />
+          </label>
+          <label>Contacto
+            <input type="tel" name="contacto" placeholder="Seu contacto" />
+          </label>
+          <div class="form-row">
+            <label>Número de pessoas
+              <input type="number" name="pessoas" min="1" placeholder="Ex: 4" />
+            </label>
+            <label>Horário de chegada
+              <input type="time" name="horario" />
+            </label>
+          </div>
+          <label>Tipo de reserva
+            <select name="tipo">
+              <option value="Mesa e comida">Mesa e comida</option>
+              <option value="Só mesa">Só mesa</option>
+              <option value="Só comida">Só comida</option>
+              <option value="Pedido para viagem">Pedido para viagem</option>
+            </select>
+          </label>
+          <label>Pedido
+            <textarea name="pedido" id="pedidoField" rows="5" placeholder="Ex: 2 frangos grelhados com arroz, 1 matapa, bebidas..."></textarea>
+          </label>
+          <label>Observações
+            <textarea name="observacoes" rows="3" placeholder="Ex: Estou em viagem e quero que esteja pronto quando chegar."></textarea>
+          </label>
+          <button class="btn btn-primary full" type="submit">Enviar reserva pelo WhatsApp</button>
+          <p class="form-note">A reserva só fica confirmada após resposta do restaurante.</p>
+        </form>
+      </div>
+    </section>
+
+    <section id="galeria" class="section gallery-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Galeria</p>
+          <h2>Ambiente, equipa, pratos e bebidas.</h2>
+        </div>
+        <div class="gallery-grid reveal">
+          <a href="assets/images/placa_grupo.jpg" target="_blank"><img src="assets/images/placa_grupo.jpg" alt="Grupo em frente à placa do Fora da Moda" /></a>
+          <a href="assets/images/area_externa.jpg" target="_blank"><img src="assets/images/area_externa.jpg" alt="Área externa do restaurante" /></a>
+          <a href="assets/images/esplanada.jpg" target="_blank"><img src="assets/images/esplanada.jpg" alt="Esplanada com mesas de madeira" /></a>
+          <a href="assets/images/prato_arroz_molho.jpg" target="_blank"><img src="assets/images/prato_arroz_molho.jpg" alt="Prato com arroz e molho" /></a>
+          <a href="assets/images/matapa.jpg" target="_blank"><img src="assets/images/matapa.jpg" alt="Matapa servido em tigela" /></a>
+          <a href="assets/images/frango_arroz.jpg" target="_blank"><img src="assets/images/frango_arroz.jpg" alt="Frango grelhado com arroz" /></a>
+          <a href="assets/images/grelhados.jpg" target="_blank"><img src="assets/images/grelhados.jpg" alt="Grelhados na churrasqueira" /></a>
+          <a href="assets/images/bar_cocktail.jpg" target="_blank"><img src="assets/images/bar_cocktail.jpg" alt="Atendimento no bar com bebida" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao" class="section location-section">
+      <div class="container two-col align-start">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Localização</p>
+          <h2>Estamos em Anchilo.</h2>
+          <p>Use as coordenadas abaixo para abrir o mapa e chegar diretamente ao restaurante.</p>
+          <div class="location-box">
+            <strong>15°05'56.5"S 39°25'37.3"E</strong>
+            <span>Decimal: -15.0990278, 39.4270278</span>
+          </div>
+          <div class="button-row">
+            <a class="btn btn-primary" href="https://www.google.com/maps?q=-15.0990278,39.4270278" target="_blank" rel="noopener">Abrir no Google Maps</a>
+            <a class="btn btn-light" href="tel:+258864992397">Ligar Agora</a>
+            <a class="btn btn-ghost dark" href="https://wa.me/258864992397" target="_blank" rel="noopener">Enviar Mensagem</a>
+          </div>
+        </div>
+        <div class="map-card reveal">
+          <iframe title="Mapa do Fora da Moda em Anchilo" loading="lazy" src="https://www.google.com/maps?q=-15.0990278,39.4270278&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/images/logo.jpg" alt="Logotipo Fora da Moda" />
+        <h2>Fora da Moda – Restaurante Bar</h2>
+        <p>Comida local, grelhados, fast food e bom atendimento em Anchilo.</p>
+        <a href="https://wa.me/258864992397" target="_blank" rel="noopener">+258 86 499 2397</a>
+      </div>
+      <div class="footer-links">
+        <a href="#menu">Menu digital</a>
+        <a href="#reservas">Reservas</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#localizacao">Localização</a>
+      </div>
+      <div class="footer-gallery" aria-label="Galeria do rodapé">
+        <img src="assets/images/fachada.jpg" alt="Fachada" />
+        <img src="assets/images/codorniz_arroz.jpg" alt="Prato servido" />
+        <img src="assets/images/bar_atendimento.jpg" alt="Atendimento no bar" />
+        <img src="assets/images/sala_grupo.jpg" alt="Interior do restaurante" />
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Fora da Moda. Site demonstrativo com menu editável.</div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/258864992397?text=Ol%C3%A1%2C%20Fora%20da%20Moda.%20Gostaria%20de%20fazer%20uma%20reserva." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">WhatsApp</a>
+
+  <script>window.MENU_DATA = {"Comidas Locais": [["Matapa com arroz", "Matapa cremosa com arroz branco, sabor caseiro e tradicional.", 250], ["Xima com molho tradicional", "Xima servida com molho da casa.", 180], ["Peixe grelhado com arroz ou xima", "Peixe fresco grelhado com acompanhamento à escolha.", 450], ["Frango ao molho com arroz", "Frango suculento ao molho servido com arroz.", 350], ["Camarão ao molho", "Camarão preparado no molho da casa.", 600], ["Codorniz grelhada", "Codorniz temperada e grelhada no ponto.", 400]], "Grelhados": [["Frango grelhado com batata", "Frango bem temperado, batata e salada simples.", 450], ["Frango grelhado com arroz", "Grelhado de frango com arroz da casa.", 400], ["Codorniz grelhada com acompanhamento", "Codorniz grelhada com arroz, batata ou xima.", 500], ["Peixe grelhado completo", "Peixe grelhado com acompanhamento e salada.", 550], ["Espetada de frango", "Espetada de frango com tempero especial.", 300]], "Fast Food": [["Hambúrguer simples", "Pão, carne, molho e salada.", 180], ["Hambúrguer completo", "Hambúrguer com queijo, ovo, salada e molho.", 280], ["Hambúrguer com batata", "Hambúrguer completo acompanhado de batata frita.", 350], ["Pizza pequena", "Pizza individual com cobertura da casa.", 350], ["Pizza média", "Pizza média para partilhar.", 500], ["Cachorro quente", "Cachorro quente simples e saboroso.", 180], ["Batata frita", "Porção de batata frita crocante.", 150]], "Pratos Rápidos": [["Arroz com frango", "Prato rápido com frango e arroz.", 300], ["Arroz com peixe", "Peixe servido com arroz.", 400], ["Arroz com salada e ovo", "Opção leve e rápida.", 220], ["Frango com salada", "Frango servido com salada fresca.", 350], ["Prato do dia", "Sugestão da cozinha, preparada conforme disponibilidade.", 250]], "Bebidas": [["Água", "Água mineral.", 50], ["Refrigerante", "Bebida gelada.", 80], ["Sumos", "Sumos variados.", 120], ["Café", "Café servido na hora.", 70], ["Bebida especial da casa", "Bebida preparada pela equipa do bar.", 180]]};</script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
